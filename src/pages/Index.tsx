@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 const POET_IMAGE = "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774118073/chandu_profile_pic_knmizc.jpg";
 
 const featuredBooks = [
-  {
-    title: "మట్టి రెక్కల చందమామ",
-    desc: "ఎనిమిదవ తరగతిలో రాసిన మొదటి కవితా సంపుటి",
-  },
-  {
-    title: "కాలుతున్న వెన్నెల",
-    desc: "ఇంటర్మీడియట్ సమయంలో వెలువరించిన కవితా సంపుటి",
-  },
-  {
-    title: "గొంతు తెగిన అక్షరం",
-    desc: "డిగ్రీ మొదటి సంవత్సరంలో రచించిన పుస్తకం",
-  },
-];
+{
+  title: "మట్టి రెక్కల చందమామ",
+  desc: "ఎనిమిదవ తరగతిలో రాసిన మొదటి కవితా సంపుటి"
+},
+{
+  title: "కాలుతున్న వెన్నెల",
+  desc: "ఇంటర్మీడియట్ సమయంలో వెలువరించిన కవితా సంపుటి"
+},
+{
+  title: "గొంతు తెగిన అక్షరం",
+  desc: "డిగ్రీ మొదటి సంవత్సరంలో రచించిన పుస్తకం"
+}];
+
 
 export default function Index() {
   return (
@@ -32,8 +32,8 @@ export default function Index() {
               <img
                 src={POET_IMAGE}
                 alt="యువ కవి శీర్పి చంద్రశేఖర్"
-                className="w-full max-w-[280px] aspect-[3/4] object-cover rounded-sm shadow-md"
-              />
+                className="w-full max-w-[280px] aspect-[3/4] object-cover rounded-sm shadow-md" />
+              
               <div className="mt-4 text-center">
                 <p className="font-serif-telugu text-lg font-bold text-headline">
                   యువ కవి శీర్పి చంద్రశేఖర్
@@ -44,8 +44,9 @@ export default function Index() {
 
           {/* Headline */}
           <ScrollReveal direction="right" delay={100}>
-            <h1 className="newspaper-headline text-3xl md:text-4xl lg:text-[2.75rem] text-balance leading-snug">
-              సాహిత్య జగత్తులో ధృవతారగా ఉదయిస్తున్న యువకవి 'శీర్పి చంద్రశేఖర్'
+            <h1 className="newspaper-headline text-3xl md:text-4xl lg:text-[2.75rem] text-balance leading-snug font-sans font-extrabold">సాహిత్య జగత్తులో ధృవతారగా
+ఉదయిస్తున్న యువకవి 'శీర్పి చంద్రశేఖర్'
+
             </h1>
             <p className="mt-6 prose-telugu text-muted-foreground text-pretty">
               అనంతపురం జిల్లాకు చెందిన యువ కవి శీర్పి చంద్రశేఖర్, కేవలం 20 ఏళ్ల
@@ -66,8 +67,7 @@ export default function Index() {
         </ScrollReveal>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {featuredBooks.map((book, i) => (
-            <ScrollReveal key={book.title} delay={i * 80}>
+          {featuredBooks.map((book, i) => <ScrollReveal key={book.title} delay={i * 80}>
               <div className="group bg-surface rounded-sm p-6 transition-shadow duration-300 hover:shadow-lg cursor-default">
                 <h3 className="font-serif-telugu text-xl font-semibold text-headline mb-3 text-balance">
                   {book.title}
@@ -76,14 +76,14 @@ export default function Index() {
                   {book.desc}
                 </p>
                 <Link
-                  to="/books"
-                  className="inline-block text-sm font-sans-telugu text-accent hover:underline underline-offset-4 transition-colors active:scale-95"
-                >
+                to="/books"
+                className="inline-block text-sm font-sans-telugu text-accent hover:underline underline-offset-4 transition-colors active:scale-95">
+                
                   చదవండి →
                 </Link>
               </div>
             </ScrollReveal>
-          ))}
+          )}
         </div>
         <div className="section-divider mt-16" />
       </section>
@@ -100,12 +100,12 @@ export default function Index() {
           </p>
           <Link
             to="/about"
-            className="inline-block mt-6 px-6 py-2.5 bg-primary text-primary-foreground font-sans-telugu text-sm rounded-sm hover:opacity-90 transition-opacity active:scale-[0.97]"
-          >
+            className="inline-block mt-6 px-6 py-2.5 bg-primary text-primary-foreground font-sans-telugu text-sm rounded-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
+            
             మరింత చదవండి
           </Link>
         </ScrollReveal>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 }
