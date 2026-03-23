@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Mail } from "lucide-react";
+
 export function Footer() {
   return (
     <footer className="border-t border-divider mt-24">
@@ -9,10 +11,33 @@ export function Footer() {
               యువ కవి · రచయిత · సామాజిక చైతన్యకారుడు
             </p>
           </div>
-          <div className="text-sm text-muted-foreground font-sans-telugu space-y-1">
-            <p>సంప్రదించండి</p>
-            <p>email@example.com</p>
-            <p>విశాఖపట్నం, ఆంధ్రప్రదేశ్</p>
+          <div className="text-sm text-muted-foreground font-sans-telugu space-y-3">
+            <p className="font-semibold text-foreground">సంప్రదించండి</p>
+            <a
+              href="mailto:Chandrasekharseerpi@gmail.com"
+              className="flex items-center gap-2 hover:text-foreground transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              Chandrasekharseerpi@gmail.com
+            </a>
+            <a
+              href="https://www.facebook.com/valmiki.chandu.899849"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-foreground transition-colors"
+            >
+              <Facebook className="w-4 h-4" />
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/incognitic_emperor_2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-foreground transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+              Instagram
+            </a>
           </div>
         </div>
         <div className="section-divider mt-8 mb-4" />
