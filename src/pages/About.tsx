@@ -2,64 +2,64 @@ import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 const personalDetails = [
-  { label: "జన్మదినం", value: "02.08.2005" },
-  { label: "ప్రాంతం", value: "ఆంధ్రప్రదేశ్, అనంతపురం జిల్లా, బెళుగుప్ప మండలం, శీర్పి గ్రామం" },
-  { label: "తల్లిదండ్రులు", value: "సరస్వతి, శివశంకర్ (వ్యవసాయం)" },
-  { label: "నివాసం", value: "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా" },
-];
+{ label: "జన్మదినం", value: "02.08.2005" },
+{ label: "ప్రాంతం", value: "ఆంధ్రప్రదేశ్, అనంతపురం జిల్లా, బెళుగుప్ప మండలం, శీర్పి గ్రామం" },
+{ label: "తల్లిదండ్రులు", value: "సరస్వతి, శివశంకర్ (వ్యవసాయం)" },
+{ label: "నివాసం", value: "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా" }];
+
 
 const education = [
-  { stage: "పదవ తరగతి", place: "జిల్లా పరిషత్ ఉన్నత పాఠశాల, వెంకటాద్రిపల్లి" },
-  { stage: "ఇంటర్మీడియట్", place: "శ్రీ వివేకానంద జూనియర్ కళాశాల, కళ్యాణదుర్గం" },
-  { stage: "డిగ్రీ", place: "మిసెస్ ఏ.వి.యన్ కళాశాల, విశాఖపట్నం" },
-];
+{ stage: "పదవ తరగతి", place: "జిల్లా పరిషత్ ఉన్నత పాఠశాల, వెంకటాద్రిపల్లి" },
+{ stage: "ఇంటర్మీడియట్", place: "శ్రీ వివేకానంద జూనియర్ కళాశాల, కళ్యాణదుర్గం" },
+{ stage: "డిగ్రీ", place: "మిసెస్ ఏ.వి.యన్ కళాశాల, విశాఖపట్నం" }];
+
 
 const gurus = [
-  "శీర్పి శ్రీకాంత్ గారు",
-  "తిప్పేస్వామి గారు",
-  "కొత్తపల్లి సురేష్ గారు",
-  "వెంకటరమణ గారు",
-];
+"శీర్పి శ్రీకాంత్ గారు",
+"తిప్పేస్వామి గారు",
+"కొత్తపల్లి సురేష్ గారు",
+"వెంకటరమణ గారు"];
+
 
 const books = [
-  { title: "మట్టి రెక్కల చందమామ", desc: "ఎనిమిదవ తరగతి చదువుతున్న సమయంలోనే రాసిన మొదటి కవితా సంపుటి" },
-  { title: "కాలుతున్న వెన్నెల", desc: "ఇంటర్మీడియట్ విద్యార్థిగా వెలువరించిన కవితా సంపుటి" },
-  { title: "గొంతు తెగిన అక్షరం", desc: "డిగ్రీ మొదటి సంవత్సరంలో రాసిన పుస్తకం" },
-  { title: "రాతికన్ను", desc: "రాయలసీమ ప్రాంత సమస్యలపై డిగ్రీ ద్వితీయ సంవత్సరంలో వెలువరించిన కవితా సంకలనం" },
-  { title: "ఆకుపచ్చని దుఃఖం", desc: "ఉత్తరాంధ్ర జీవనశైలి నేపథ్యంపై వెలువడిన కవితా సంకలనం" },
-];
+{ title: "మట్టి రెక్కల చందమామ", desc: "ఎనిమిదవ తరగతి చదువుతున్న సమయంలోనే రాసిన మొదటి కవితా సంపుటి" },
+{ title: "కాలుతున్న వెన్నెల", desc: "ఇంటర్మీడియట్ విద్యార్థిగా వెలువరించిన కవితా సంపుటి" },
+{ title: "గొంతు తెగిన అక్షరం", desc: "డిగ్రీ మొదటి సంవత్సరంలో రాసిన పుస్తకం" },
+{ title: "రాతికన్ను", desc: "రాయలసీమ ప్రాంత సమస్యలపై డిగ్రీ ద్వితీయ సంవత్సరంలో వెలువరించిన కవితా సంకలనం" },
+{ title: "ఆకుపచ్చని దుఃఖం", desc: "ఉత్తరాంధ్ర జీవనశైలి నేపథ్యంపై వెలువడిన కవితా సంకలనం" }];
+
 
 const awards = [
-  "చింతోజు బ్రహ్మయ్య బాలసాహిత్య పురస్కారం",
-  "పెందోట వెంకటేశ్వర్లు బాలసాహిత్య పురస్కారం",
-  "నిజాం వెంకటేశం సాహిత్య పురస్కారం",
-  "కొనిరెడ్డి ఫౌండేషన్ & చదువుల సాహిత్య వేదిక వారి అభినందన సత్కారం",
-  "కేంద్ర ప్రభుత్వం నిర్వహించిన 'యువ ఉత్సవ్' (యంగ్ రైటర్స్ క్యాంప్), విశాఖపట్నంలో ప్రథమ స్థానం",
-];
+"చింతోజు బ్రహ్మయ్య బాలసాహిత్య పురస్కారం",
+"పెందోట వెంకటేశ్వర్లు బాలసాహిత్య పురస్కారం",
+"నిజాం వెంకటేశం సాహిత్య పురస్కారం",
+"కొనిరెడ్డి ఫౌండేషన్ & చదువుల సాహిత్య వేదిక వారి అభినందన సత్కారం",
+"కేంద్ర ప్రభుత్వం నిర్వహించిన 'యువ ఉత్సవ్' (యంగ్ రైటర్స్ క్యాంప్), విశాఖపట్నంలో ప్రథమ స్థానం"];
+
 
 const birudulu = ["కవి డేగ", "అభినవ వాల్మీకి"];
 
 const kalamPerlu = ["శీర్పి వాల్మీకి"];
 
 const socialWork = [
-  {
-    title: "'డేగ' అంతర్జాల మాసపత్రిక",
-    desc: "ఈ పత్రికకు సంపాదకుడిగా వ్యవహరిస్తూ, అనేక మంది కొత్త కవులను ప్రోత్సహిస్తూ సమాజ చైతన్యం కోసం కృషి చేస్తున్నారు",
-  },
-  {
-    title: "యూత్ ఆర్బిట్ సంస్థ",
-    desc: "ఈ సంస్థ వ్యవస్థాపకునిగా యువతలో స్ఫూర్తిని, సామాజిక బాధ్యతను పెంపొందించే ఎన్నో కార్యక్రమాలకు శ్రీకారం చుట్టారు",
-  },
-];
+{
+  title: "'డేగ' అంతర్జాల మాసపత్రిక",
+  desc: "ఈ పత్రికకు సంపాదకుడిగా వ్యవహరిస్తూ, అనేక మంది కొత్త కవులను ప్రోత్సహిస్తూ సమాజ చైతన్యం కోసం కృషి చేస్తున్నారు"
+},
+{
+  title: "యూత్ ఆర్బిట్ సంస్థ",
+  desc: "ఈ సంస్థ వ్యవస్థాపకునిగా యువతలో స్ఫూర్తిని, సామాజిక బాధ్యతను పెంపొందించే ఎన్నో కార్యక్రమాలకు శ్రీకారం చుట్టారు"
+}];
 
-function SectionTitle({ children }: { children: React.ReactNode }) {
+
+function SectionTitle({ children }: {children: React.ReactNode;}) {
   return (
     <ScrollReveal>
       <h2 className="font-serif-telugu text-2xl md:text-3xl font-bold text-headline mb-6 text-balance">
         {children}
       </h2>
-    </ScrollReveal>
-  );
+    </ScrollReveal>);
+
 }
 
 export default function About() {
@@ -98,22 +98,22 @@ export default function About() {
           <SectionTitle>వ్యక్తిగత వివరాలు</SectionTitle>
           <ScrollReveal delay={60}>
             <dl className="space-y-4">
-              {personalDetails.map((d) => (
-                <div key={d.label} className="flex flex-col sm:flex-row sm:gap-4">
+              {personalDetails.map((d) =>
+              <div key={d.label} className="flex flex-col sm:flex-row sm:gap-4">
                   <dt className="font-sans-telugu font-semibold text-headline min-w-[140px] text-sm">{d.label}</dt>
                   <dd className="text-muted-foreground font-sans-telugu text-sm">{d.value}</dd>
                 </div>
-              ))}
+              )}
             </dl>
 
             <h3 className="font-serif-telugu text-lg font-semibold text-headline mt-8 mb-4">విద్య</h3>
             <dl className="space-y-3">
-              {education.map((e) => (
-                <div key={e.stage} className="flex flex-col sm:flex-row sm:gap-4">
+              {education.map((e) =>
+              <div key={e.stage} className="flex flex-col sm:flex-row sm:gap-4">
                   <dt className="font-sans-telugu font-semibold text-headline min-w-[140px] text-sm">{e.stage}</dt>
                   <dd className="text-muted-foreground font-sans-telugu text-sm">{e.place}</dd>
                 </div>
-              ))}
+              )}
             </dl>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -124,9 +124,9 @@ export default function About() {
           <SectionTitle>గురువులు</SectionTitle>
           <ScrollReveal delay={60}>
             <ul className="space-y-2">
-              {gurus.map((g) => (
-                <li key={g} className="font-sans-telugu text-foreground text-base">{g}</li>
-              ))}
+              {gurus.map((g) =>
+              <li key={g} className="font-sans-telugu text-foreground text-base">{g}</li>
+              )}
             </ul>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -136,14 +136,14 @@ export default function About() {
         <section>
           <SectionTitle>రచనలు</SectionTitle>
           <div className="space-y-6">
-            {books.map((b, i) => (
-              <ScrollReveal key={b.title} delay={i * 60}>
+            {books.map((b, i) =>
+            <ScrollReveal key={b.title} delay={i * 60}>
                 <div className="bg-surface rounded-sm p-5">
                   <h3 className="font-serif-telugu text-lg font-semibold text-headline">{b.title}</h3>
                   <p className="text-sm text-muted-foreground font-sans-telugu mt-1">{b.desc}</p>
                 </div>
               </ScrollReveal>
-            ))}
+            )}
           </div>
           <div className="section-divider mt-12" />
         </section>
@@ -156,12 +156,12 @@ export default function About() {
               సాహిత్య సృజనతో పాటు సామాజిక సేవా కార్యక్రమాల్లో చంద్రశేఖర్ చురుగ్గా పాల్గొంటున్నారు:
             </p>
             <div className="space-y-5">
-              {socialWork.map((s) => (
-                <div key={s.title} className="bg-surface rounded-sm p-5">
+              {socialWork.map((s) =>
+              <div key={s.title} className="bg-surface rounded-sm p-5">
                   <h3 className="font-serif-telugu text-lg font-semibold text-headline">{s.title}</h3>
                   <p className="text-sm text-muted-foreground font-sans-telugu mt-1">{s.desc}</p>
                 </div>
-              ))}
+              )}
             </div>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -172,12 +172,12 @@ export default function About() {
           <SectionTitle>పురస్కారాలు</SectionTitle>
           <ScrollReveal delay={60}>
             <ul className="space-y-2">
-              {awards.map((a) => (
-                <li key={a} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
+              {awards.map((a) =>
+              <li key={a} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
                   <span className="text-accent mt-1">✦</span>
                   {a}
                 </li>
-              ))}
+              )}
             </ul>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -188,12 +188,12 @@ export default function About() {
           <SectionTitle>బిరుదులు</SectionTitle>
           <ScrollReveal delay={60}>
             <ul className="space-y-2">
-              {birudulu.map((b) => (
-                <li key={b} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
+              {birudulu.map((b) =>
+              <li key={b} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
                   <span className="text-accent mt-1">✦</span>
                   {b}
                 </li>
-              ))}
+              )}
             </ul>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -204,12 +204,12 @@ export default function About() {
           <SectionTitle>కలం పేర్లు</SectionTitle>
           <ScrollReveal delay={60}>
             <ul className="space-y-2">
-              {kalamPerlu.map((k) => (
-                <li key={k} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
+              {kalamPerlu.map((k) =>
+              <li key={k} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
                   <span className="text-accent mt-1">✦</span>
                   {k}
                 </li>
-              ))}
+              )}
             </ul>
           </ScrollReveal>
           <div className="section-divider mt-12" />
@@ -260,11 +260,11 @@ export default function About() {
                 పెంచడం వంటి విషయాల్లో నిత్యం ప్రోత్సహించారు. గ్రామంపై బాధ్యతలు,
                 విలువలు బోధించారు.
               </p>
-              <p>
-                ప్రకృతి ఒడిలో జీవరాశుల చలనాలను గమనించే చంద్రశేఖర్, తన ప్రాంతంలో
-                కనిపించే "జీరంగి" అనే కీటకంపై రెండవ తరగతిలోనే అద్భుతమైన కవితను
-                రచించారు. ఆ కవితను తన గురువు తిప్పేస్వామి గారికి చూపించి ఆశీర్వాదాలు
-                అందుకున్నారు.
+              <p>ప్రకృతి ఒడిలో జీవరాశుల చలనాలను గమనించే చంద్రశేఖర్, తన ప్రాంతంలో కనిపించే "జీరంగి" అనే కీటకంపై రెండవ తరగతిలోనే అద్భుతమైన కవితను రచించారు. ఆ కవితను తన గురువు తిప్పేస్వామి గారికి చూపించి ప్రోత్సహాన్ని, ప్రేరణను అందుకున్నారు.
+
+
+
+
               </p>
               <p>
                 జిల్లా పరిషత్ ఉన్నత పాఠశాల వెంకటాద్రిపల్లిలో చదువుతున్నప్పుడు,
@@ -308,6 +308,6 @@ export default function About() {
           </ScrollReveal>
         </section>
       </div>
-    </Layout>
-  );
+    </Layout>);
+
 }
