@@ -1,11 +1,14 @@
 export const siteData = {
   // A. Hero & Identity
   hero: {
+    mainPortrait: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/chandu_profile_dp_vdv6wh.jpg",
+    degaLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489698/dega_logo_amh89s.jpg",
+    sukaviLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/sukavi_logo_zhqkvm.jpg",
     headlineTop: "ఒక కలం - ఒక కర్తవ్యం - ఒక చరిత్ర",
     headlineName: "శీర్పి చంద్రశేఖర్",
     subheadline:
       "ఒక పల్లె నేపథ్యం... ఎన్నో ఆలోచనల ప్రయాణం... సమాజం కోసం ఒక నిరంతర సంకల్పం",
-    titles: ["కవి డేగ", "అభినవ వాల్మీకి", "రచయిత", "సంపాదకుడు", "యuva పారిశ్రామికవేత్త"],
+    titles: ["కవి డేగ", "అభినవ వాల్మీకి", "రచయిత", "సంపాదకుడు", "యువ పారిశ్రామికవేత్త"],
     penNames: ["శీర్పి", "వాల్మీకి"],
     philosophyQuote:
       "మన కన్నీళ్లను, గాయాలను ప్రపంచం ముందు ప్రదర్శించకూడదు. ప్రపంచపు కన్నీళ్లను, గాయాలను మనం బాధ్యతతో స్వీకరించి పరిష్కరించాలి.",
