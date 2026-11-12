@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { to: "/", label: "హోమ్" },
+  { to: "/about", label: "పరిచయం" },
   { to: "/books", label: "పుస్తకాలు" },
   { to: "/gallery", label: "గ్యాలరీ" },
-  { to: "/about", label: "పరిచయం" },
 ];
 
 export function Navigation() {
