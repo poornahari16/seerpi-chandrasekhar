@@ -21,6 +21,10 @@ export const siteData = {
     birthplace:
       "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా, ఆంధ్రప్రదేశ్ (ఉరవకొండ నియోజకవర్గం)",
     parents: "తండ్రి బోయ శివశంకర్, తల్లి బోయ సరస్వతి (రైతు కుటుంబం)",
+    parentsPhoto: {
+      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505479/ch_parents_shfzdi.jpg",
+      caption: "శీర్పి చంద్రశేఖర్ తల్లిదండ్రులు శ్రీ బోయ శివశంకర్ గారు & శ్రీమతి బోయ సరస్వతి గారు",
+    },
     education: [
       {
         stage: "పాఠశాల విద్య",
@@ -109,7 +113,7 @@ export const siteData = {
     },
   ],
 
-  // D. Five Verified Awards
+  // D. Awards & Felicitations (6 total)
   awards: [
     {
       id: 1,
@@ -146,9 +150,14 @@ export const siteData = {
       title: "నెహ్రూ యువ కేంద్రం (Nehru Yuva Kendra) యూత్ ఫెస్ట్ – మొదటి బహుమతి (విశాఖపట్నం, 2024)",
       image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_award_4_bluzk2.jpg",
     },
+    {
+      id: 6,
+      title: "శీర్పి చంద్రశేఖర్ కు ఘన సత్కారం (అనంతపురం)",
+      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_facilation_lufmwq.jpg",
+    },
   ],
 
-  // E. Newspaper Coverage
+  // E. Newspaper & Bulletin Coverage (10 total)
   newspaperCoverage: [
     {
       id: 1,
@@ -204,6 +213,12 @@ export const siteData = {
       date: "",
       image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488663/ch_samhahitha_jap7ko.jpg",
     },
+    {
+      id: 10,
+      paper: "రాయలసీమ విద్యావంతుల వేదిక బులిటిన్",
+      date: "",
+      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_words_xipqia.jpg",
+    },
   ],
 
   // F. Initiatives
@@ -222,40 +237,66 @@ export const siteData = {
     },
     {
       title: "SUKAVI",
-      role: "ప్రణాళిక మరియు అభివృద్ధి దశలో ఉన్న ఆలోచన",
+      role: "ప్రణాళిక దశలో ఉన్న ఆలోచన",
       description:
-        "రైతుల టమోటా, మిరప వంటి వ్యవసాయ ఉత్పత్తులకు విలువ జోడించి సాస్‌లు, ఇతర ఆహార ఉత్పత్తుల తయారీ ద్వారా గ్రామీణ ఆర్థికాభివృద్ధికి తోడ్పడాలనే ఆహార ప్రాసెసింగ్ ఆలోచన — strictly planning stage, NOT an operating factory.",
+        "రైతుల టమోటా, మిరప వంటి వ్యవసాయ ఉత్పత్తులకు విలువ జోడించి సాస్‌లు, ఇతర ఆహార ఉత్పత్తుల తయారీ ద్వారా గ్రామీణ ఆర్థికాభివృద్ధికి తోడ్పడాలనే ఆహార ప్రాసెసింగ్ ఆలోచన (ప్రస్తుతం ప్రణాళిక మరియు అభివృద్ధి దశలో ఉంది).",
     },
   ],
 
-  // G. Gallery & Contact
+  // G. Book Events
+  bookEvents: [
+    {
+      id: 1,
+      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_book_1_innmwo.jpg",
+      caption: "'రాతికన్ను' పుస్తకావిష్కరణ సభలో శీర్పి చంద్రశేఖర్",
+    },
+    {
+      id: 2,
+      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505451/ch_book_release_cwktl4.jpg",
+      caption: "'కాలుతున్న వెన్నెల' పుస్తకావిష్కరణ సభ",
+    },
+    {
+      id: 3,
+      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505454/ch_library_gmhiir.jpg",
+      caption: "గ్రంథాలయాలలో శీర్పి చంద్రశేఖర్ పుస్తకాలు",
+    },
+  ],
+
+  // H. Gallery & Contact
   gallery: {
     profileImage:
       "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774118073/chandu_profile_pic_knmizc.jpg",
     images: [
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258793/1dbdc4dc-7207-4bd2-9511-662fbabf27bd.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258823/795e13dd-f7ac-4e92-a592-d88222a543e2.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258884/100fed89-892e-4604-beb1-d37649c906c9.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258927/ffd4c2e9-3b19-4d36-8ecf-f150d6882944.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258958/52343fd9-b9b0-489f-9ba1-a29c137a842c.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258992/afc03ece-f571-462e-bb23-4c9f5ec0c6ee.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259012/7d43c6ec-f356-4331-825a-2af682828ac2.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259019/bdee5b0d-68a4-49a6-a995-809dadf299ed.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259030/7a01a96c-7375-408b-8e37-20ebc3f5f865.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259049/bc5dcbe0-53cf-442f-8c7f-ffba63811297.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259067/28dc7d85-8e88-4e9f-b38a-90d5fc52bf98.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259087/d04d6243-483c-4bc6-9f6a-7d64f615dbe7.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259102/5c0e99b2-4015-4eed-8eb5-ae7eeb59a1ea.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259119/52c23f17-2a88-4e16-9a73-a1d63a046a0c.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259126/bd737e64-6908-48ab-903b-5f30da861651.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259132/5ac319a0-7c27-43c2-9370-e2adf67f0ba9.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259148/8cbe46b9-ee81-48ef-a171-c6566ae9179b.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259151/7b125b77-664d-4260-99a0-af438e991d6f.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259189/239374a3-2106-4978-bd64-5ae0c5caf2af.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259193/570a7699-0064-4b31-a76e-88e5ce9f3ee8.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259208/fcc47fcb-11b5-4fc4-b26d-fd745fff7426.png",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_eenadu_2_yrlckg.jpg",
-      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch1_d1wrqj.jpg",
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258793/1dbdc4dc-7207-4bd2-9511-662fbabf27bd.png", caption: "గ్యాలరీ చిత్రం 1", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258823/795e13dd-f7ac-4e92-a592-d88222a543e2.png", caption: "గ్యాలరీ చిత్రం 2", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258884/100fed89-892e-4604-beb1-d37649c906c9.png", caption: "గ్యాలరీ చిత్రం 3", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258927/ffd4c2e9-3b19-4d36-8ecf-f150d6882944.png", caption: "గ్యాలరీ చిత్రం 4", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258958/52343fd9-b9b0-489f-9ba1-a29c137a842c.png", caption: "గ్యాలరీ చిత్రం 5", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258992/afc03ece-f571-462e-bb23-4c9f5ec0c6ee.png", caption: "గ్యాలరీ చిత్రం 6", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259012/7d43c6ec-f356-4331-825a-2af682828ac2.png", caption: "గ్యాలరీ చిత్రం 7", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259019/bdee5b0d-68a4-49a6-a995-809dadf299ed.png", caption: "గ్యాలరీ చిత్రం 8", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259030/7a01a96c-7375-408b-8e37-20ebc3f5f865.png", caption: "గ్యాలరీ చిత్రం 9", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259049/bc5dcbe0-53cf-442f-8c7f-ffba63811297.png", caption: "గ్యాలరీ చిత్రం 10", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259067/28dc7d85-8e88-4e9f-b38a-90d5fc52bf98.png", caption: "గ్యాలరీ చిత్రం 11", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259087/d04d6243-483c-4bc6-9f6a-7d64f615dbe7.png", caption: "గ్యాలరీ చిత్రం 12", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259102/5c0e99b2-4015-4eed-8eb5-ae7eeb59a1ea.png", caption: "గ్యాలరీ చిత్రం 13", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259119/52c23f17-2a88-4e16-9a73-a1d63a046a0c.png", caption: "గ్యాలరీ చిత్రం 14", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259126/bd737e64-6908-48ab-903b-5f30da861651.png", caption: "గ్యాలరీ చిత్రం 15", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259132/5ac319a0-7c27-43c2-9370-e2adf67f0ba9.png", caption: "గ్యాలరీ చిత్రం 16", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259148/8cbe46b9-ee81-48ef-a171-c6566ae9179b.png", caption: "గ్యాలరీ చిత్రం 17", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259151/7b125b77-664d-4260-99a0-af438e991d6f.png", caption: "గ్యాలరీ చిత్రం 18", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259189/239374a3-2106-4978-bd64-5ae0c5caf2af.png", caption: "గ్యాలరీ చిత్రం 19", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259193/570a7699-0064-4b31-a76e-88e5ce9f3ee8.png", caption: "గ్యాలరీ చిత్రం 20", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774259208/fcc47fcb-11b5-4fc4-b26d-fd745fff7426.png", caption: "గ్యాలరీ చిత్రం 21", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_eenadu_2_yrlckg.jpg", caption: "గ్యాలరీ చిత్రం 22", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch1_d1wrqj.jpg", caption: "గ్యాలరీ చిత్రం 23", category: "general", featured: false },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_meet_ju8mtb.jpg", caption: "విశాఖపట్నంలో కవి మిత్రులతో యువకవి శీర్పి చంద్రశేఖర్", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505453/ch_stage1_pnfwpz.jpg", caption: "సాహిత్య వేదికపై శీర్పి చంద్రశేఖర్ ప్రసంగం", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505452/ch_some_qxqvzn.jpg", caption: "శ్రామిక ఉత్సవ్‌లో శీర్పి చంద్రశేఖర్", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_book_1_innmwo.jpg", caption: "'రాతికన్ను' పుస్తకావిష్కరణ సభలో శీర్పి చంద్రశేఖర్", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505451/ch_book_release_cwktl4.jpg", caption: "'కాలుతున్న వెన్నెల' పుస్తకావిష్కరణ సభ", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505454/ch_library_gmhiir.jpg", caption: "గ్రంథాలయాలలో శీర్పి చంద్రశేఖర్ పుస్తకాలు", category: "events", featured: true },
+      { url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505451/ch_some1_ogrd2p.jpg", caption: "శీర్పి చంద్రశేఖర్ సాహిత్య కార్యక్రమ చిత్రం", category: "events", featured: false },
     ],
   },
 

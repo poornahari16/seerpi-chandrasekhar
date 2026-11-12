@@ -12,9 +12,9 @@ const NotFound = () => {
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <div className="text-center">
         <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">ఓప్స్! పేజీ కనుగొలేయబడింది</p>
+        <p className="mb-4 text-xl text-muted-foreground">క్షమించండి! మీరు వెతుకుతున్న పేజీ కనుగొనబడలేదు</p>
         <a href="/" className="text-primary underline hover:text-primary/90">
-          హోమ్కు తిరిగి
+          హోమ్ పేజీకి తిరిగి వెళ్ళండి
         </a>
       </div>
     </div>
