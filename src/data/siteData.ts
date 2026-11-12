@@ -9,6 +9,8 @@ export const siteData = {
     penNames: ["శీర్పి", "వాల్మీకి"],
     philosophyQuote:
       "మన కన్నీళ్లను, గాయాలను ప్రపంచం ముందు ప్రదర్శించకూడదు. ప్రపంచపు కన్నీళ్లను, గాయాలను మనం బాధ్యతతో స్వీకరించి పరిష్కరించాలి.",
+    profileImage:
+      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/chandu_profile_dp_vdv6wh.jpg",
   },
 
   // B. Personal & Education Facts
@@ -18,7 +20,11 @@ export const siteData = {
     birthplace:
       "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా, ఆంధ్రప్రదేశ్ (ఉరవకొండ నియోజకవర్గం)",
     parents: "తండ్రి బోయ శివశంకర్, తల్లి బోయ సరస్వతి (రైతు కుటుంబం)",
-    education: [
+        parentsPhoto:
+          "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505479/ch_parents_shfzdi.jpg",
+        parentsCaption:
+          "శీర్పి చంద్రశేఖర్ తల్లిదండ్రులు శ్రీ బోయ శివశంకర్ గారు & శ్రీమతి బోయ సరస్వతి గారు",
+        education: [
       {
         stage: "పాఠశాల విద్య",
         place: "Zilla Parishad High School (ZPHS), Venkatadripalli, Seerpi Village",
