@@ -1,14 +1,23 @@
 export const siteData = {
   // A. Hero & Identity
   hero: {
-    mainPortrait: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/chandu_profile_dp_vdv6wh.jpg",
-    degaLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489698/dega_logo_amh89s.jpg",
-    sukaviLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/sukavi_logo_zhqkvm.jpg",
+    mainPortrait:
+      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/chandu_profile_dp_vdv6wh.jpg",
+    degaLogo:
+      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489698/dega_logo_amh89s.jpg",
+    sukaviLogo:
+      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/sukavi_logo_zhqkvm.jpg",
     headlineTop: "ఒక కలం - ఒక కర్తవ్యం - ఒక చరిత్ర",
     headlineName: "శీర్పి చంద్రశేఖర్",
     subheadline:
       "ఒక పల్లె నేపథ్యం... ఎన్నో ఆలోచనల ప్రయాణం... సమాజం కోసం ఒక నిరంతర సంకల్పం",
-    titles: ["కవి డేగ", "అభినవ వాల్మీకి", "రచయిత", "సంపాదకుడు", "యువ పారిశ్రామికవేత్త"],
+    titles: [
+      "కవి డేగ",
+      "అభినవ వాల్మీకి",
+      "రచయిత",
+      "సంపాదకుడు",
+      "యువ పారిశ్రామికవేత్త",
+    ],
     penNames: ["శీర్పి", "వాల్మీకి"],
     philosophyQuote:
       "మన కన్నీళ్లను, గాయాలను ప్రపంచం ముందు ప్రదర్శించకూడదు. ప్రపంచపు కన్నీళ్లను, గాయాలను మనం బాధ్యతతో స్వీకరించి పరిష్కరించాలి.",
@@ -22,7 +31,8 @@ export const siteData = {
       "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా, ఆంధ్రప్రదేశ్ (ఉరవకొండ నియోజకవర్గం)",
     parents: "తండ్రి బోయ శివశంకర్, తల్లి బోయ సరస్వతి (రైతు కుటుంబం)",
     parentsPhoto: {
-      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505479/ch_parents_shfzdi.jpg",
+      url:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505479/ch_parents_shfzdi.jpg",
       caption: "శీర్పి చంద్రశేఖర్ తల్లిదండ్రులు శ్రీ బోయ శివశంకర్ గారు & శ్రీమతి బోయ సరస్వతి గారు",
     },
     education: [
@@ -68,8 +78,10 @@ export const siteData = {
       stage: "8వ తరగతిలో రాసిన తొలి కవితా సంపుటి",
       description:
         "ఈ పుస్తకంలోని కవిత్వంలో కవి శీర్పి చంద్రశేఖర్ గారి బాల్యంలో పరిశీలించిన సమాజం, ప్రకృతి ప్రతిబింబిస్తాయి.",
-      cover: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774257957/matti_rekkala_irqwqr.jpg",
-      pdf: "https://drive.google.com/file/d/1e3BJIfWTY2CWWgOhXyzT-qW4v4IJMkzY/view?usp=drive_link",
+      cover:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774257957/matti_rekkala_irqwqr.jpg",
+      pdf:
+        "https://drive.google.com/file/d/1e3BJIfWTY2CWWgOhXyzT-qW4v4IJMkzY/view?usp=drive_link",
     },
     {
       id: 2,
@@ -78,8 +90,10 @@ export const siteData = {
       stage: "ఇంటర్మీడియట్ చదువుతున్నప్పుడు రచించిన కవితా సంపుటి",
       description:
         "ఈ కవితా సంపుటిలో సమాజపు వ్యవస్థ తీరును, సమస్యల్ని ఎత్తిచూపుతూ, ప్రజల్ని చైతన్యవంతుల్ని చేయాలనే లక్ష్యంతో కవిత్వం రాశారు.",
-      cover: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258199/kaluttuna_vennala_umyaqn.jpg",
-      pdf: "https://drive.google.com/file/d/1N0OqXFd2wZ72VMRBasselFIN-ZbSz79r/view?usp=drive_link",
+      cover:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258199/kaluttuna_vennala_umyaqn.jpg",
+      pdf:
+        "https://drive.google.com/file/d/1N0OqXFd2wZ72VMRBasselFIN-ZbSz79r/view?usp=drive_link",
     },
     {
       id: 3,
@@ -88,8 +102,10 @@ export const siteData = {
       stage: "డిగ్రీ ద్వితీయ సంవత్సరంలో ఉన్నప్పుడు రచించిన కవితా సంపుటి",
       description:
         "ప్రపంచ సమాజాల్లో జరుగుతున్న అన్యాయాలపై, శ్రమదోపిడీపై, పెను సంక్షోభాలపై, పేదరికం, ఆకలి చావులు, అజ్ఞాన అంధారంపై ప్రశ్నిస్తూ శాస్త్రీయ దృక్పథాన్ని పెంపొందిస్తూ యువతకు కొత్త చూపుని ఇచ్చేలా, సామాజిక బాధ్యతల్ని, స్పృహను, కర్తవ్యాన్ని గుర్తు చేసేలా కవిత్వాన్ని రాశారు.",
-      cover: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258449/gontu_thegina_aksharam_xdohbr.jpg",
-      pdf: "https://drive.google.com/file/d/1jlo0CBktb23m9ou7tUmAEjlSY3OrsCRv/view?usp=drive_link",
+      cover:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258449/gontu_thegina_aksharam_xdohbr.jpg",
+      pdf:
+        "https://drive.google.com/file/d/1jlo0CBktb23m9ou7tUmAEjlSY3OrsCRv/view?usp=drive_link",
     },
     {
       id: 4,
@@ -98,8 +114,10 @@ export const siteData = {
       stage: "రాయలసీమ ప్రాంత సమస్యలపై కవితా సంకలనం",
       description:
         "కవి శీర్పి చంద్రశేఖర్ గారు చేసిన గొప్ప సాహసం ఇది. రాయలసీమ ప్రాంత సమస్యలపై బాధ్యతతో ప్రతి యువత స్పందించాలి అనే ధ్యేయంతో రాయలసీమలో ఉన్న యువకవుల్ని, రచయితల్ని కదిలించి కవిత్వం రాయించి, తన కవిత్వంతో కలిపి ఒక మహా కవితా సంకలనంగా తీసుకువచ్చి ప్రాంతంపై బాధ్యతను గుర్తు చేశారు.",
-      cover: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258560/rathi_kannu_rwsrqm.jpg",
-      pdf: "https://drive.google.com/file/d/14wptAB_qlYt6ttNlNwFYR_hNscgIgkBM/view?usp=drive_link",
+      cover:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774258560/rathi_kannu_rwsrqm.jpg",
+      pdf:
+        "https://drive.google.com/file/d/14wptAB_qlYt6ttNlNwFYR_hNscgIgkBM/view?usp=drive_link",
     },
     {
       id: 5,
@@ -118,14 +136,16 @@ export const siteData = {
     {
       id: 1,
       title: "చింతోజు బ్రహ్మయ్య బాలసాహిత్య పురస్కారం",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch2_xbz5td.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch2_xbz5td.jpg",
     },
     {
       id: 2,
       title: "పెందోట బాలసాహిత్య పురస్కారం",
       guests:
         "పాల్గొన్న ప్రముఖులు: పెందోట బాలసాహిత్య పీఠం వ్యవస్థాపకులు పెందోట వేంకటేశ్వర్లు గారు, ప్రముఖ రచయితలు సంగభట్ల చిన్న రామకృష్ణయ్య గారు, ఎన్నమెల్లి రాజమౌళి గారు, దుర్గయ్య గారు",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488661/ch_award_yzw4fd.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488661/ch_award_yzw4fd.jpg",
     },
     {
       id: 3,
@@ -134,7 +154,8 @@ export const siteData = {
         "సికింద్రాబాద్ లో నిజాం సాహిత్య పురస్కారాన్ని అందుకున్న యువకవి శీర్పి చంద్రశేఖర్",
       guests:
         "పాల్గొన్న ప్రముఖులు: ప్రముఖ సామాజిక విశ్లేషకులు, సాహితీవేత్త, కవి, రచయిత బి. ఎస్. రాములు గారు",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_award_2_rycujq.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_award_2_rycujq.jpg",
     },
     {
       id: 4,
@@ -143,17 +164,20 @@ export const siteData = {
         "శీర్పి చంద్రశేఖర్ కు కొనిరెడ్డి ఫౌండేషన్ వారు ప్రొద్దుటూరులో ఘనసత్కారం",
       guests:
         "పాల్గొన్న ప్రముఖులు: కొనిరెడ్డి ఫౌండేషన్ అధినేత కొనిరెడ్డి శివచంద్రారెడ్డి గారు, కేంద్ర సాహిత్య అకాడమీ పురస్కార గ్రహీత డి.కె. చదువుల బాబు గారు",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488661/ch_award_3_hy9ogl.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488661/ch_award_3_hy9ogl.jpg",
     },
     {
       id: 5,
       title: "నెహ్రూ యువ కేంద్రం (Nehru Yuva Kendra) యూత్ ఫెస్ట్ – మొదటి బహుమతి (విశాఖపట్నం, 2024)",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_award_4_bluzk2.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch_award_4_bluzk2.jpg",
     },
     {
       id: 6,
       title: "శీర్పి చంద్రశేఖర్ కు ఘన సత్కారం (అనంతపురం)",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_facilation_lufmwq.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_facilation_lufmwq.jpg",
     },
   ],
 
@@ -163,61 +187,71 @@ export const siteData = {
       id: 1,
       paper: "సాక్షి పత్రిక (అనంతపురం)",
       date: "04.10.2026",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794487936/ch_sakshi_paper_gh6xq0.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794487936/ch_sakshi_paper_gh6xq0.jpg",
     },
     {
       id: 2,
       paper: "విజన్ తెలంగాణ",
       date: "ఫిబ్రవరి 2026",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488232/ch_vsion_tg_txae8x.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488232/ch_vsion_tg_txae8x.jpg",
     },
     {
       id: 3,
       paper: "ఈనాడు (అనంతపురం)",
       date: "29 ఆగస్టు 2024",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488231/ch_eenadu_nrgvf3.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488231/ch_eenadu_nrgvf3.jpg",
     },
     {
       id: 4,
       paper: "ఆంధ్రప్రభ",
       date: "1 అక్టోబర్ 2024",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488231/ch_andhraprabha_k14rxh.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488231/ch_andhraprabha_k14rxh.jpg",
     },
     {
       id: 5,
       paper: "సిద్దిపేట టైమ్స్",
       date: "6 అక్టోబర్ 2024",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_siddipeta_times_juybku.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_siddipeta_times_juybku.jpg",
     },
     {
       id: 6,
       paper: "ప్రజాశక్తి",
       date: "1 అక్టోబర్ 2024",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_prajasakhti_zsipby.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_prajasakhti_zsipby.jpg",
     },
     {
       id: 7,
       paper: "సూర్య పత్రిక",
       date: "9 మార్చి 2025",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_surya_patrika_gzczlz.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488230/ch_surya_patrika_gzczlz.jpg",
     },
     {
       id: 8,
       paper: "జనప్రగతి",
       date: "జనవరి 11",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488710/ch_janapragathi_kukd3k.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488710/ch_janapragathi_kukd3k.jpg",
     },
     {
       id: 9,
       paper: "సమాజహిత వారపత్రిక (విశాఖపట్నం)",
       date: "",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488663/ch_samhahitha_jap7ko.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488663/ch_samhahitha_jap7ko.jpg",
     },
     {
       id: 10,
       paper: "రాయలసీమ విద్యావంతుల వేదిక బులిటిన్",
       date: "",
-      image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_words_xipqia.jpg",
+      image:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_words_xipqia.jpg",
     },
   ],
 
@@ -243,26 +277,73 @@ export const siteData = {
     },
   ],
 
-  // G. Book Events
+  // G. Dega Magazine Issues (March–October 2026)
+  degaMagazine: [
+    {
+      month: "మార్చి 2026",
+      pdf:
+        "https://drive.google.com/file/d/1t_yfxErxsbTk7drR2pbC-RYm-VCUg3fB/view?usp=drive_link",
+    },
+    {
+      month: "ఏప్రిల్ 2026",
+      pdf:
+        "https://drive.google.com/file/d/16caTrHdiaFQxTZsiB6VO3gH9LmQkLGKx/view?usp=drive_link",
+    },
+    {
+      month: "మే 2026",
+      pdf:
+        "https://drive.google.com/file/d/1Y-oJoaRNmZS2i9ivK6yDAppnUWTpncio/view?usp=drive_link",
+    },
+    {
+      month: "జూన్ 2026",
+      pdf:
+        "https://drive.google.com/file/d/1Nv4BmYQ8OC0HZBA6UPqzOPe-ACi3SeAn/view?usp=drive_link",
+    },
+    {
+      month: "జూలై 2026",
+      pdf:
+        "https://drive.google.com/file/d/1UqfLw5nSc4ksYM42xu1l9PboJUV4tP9i/view?usp=drive_link",
+    },
+    {
+      month: "ఆగస్టు 2026",
+      pdf:
+        "https://drive.google.com/file/d/1N31UhVkri0PLXnuYIbF0lbZJ_idtY91C/view?usp=drive_link",
+    },
+    {
+      month: "సెప్టెంబర్ 2026",
+      pdf:
+        "https://drive.google.com/file/d/1-WpM9qKADngerKtnMat1bYxeK8vrbRQu/view?usp=drive_link",
+    },
+    {
+      month: "అక్టోబర్ 2026",
+      pdf:
+        "https://drive.google.com/file/d/1Q8L7MKeRPFKQwJTO_I8lAT7H7HjdhwY-/view?usp=drive_link",
+    },
+  ],
+
+  // H. Book Events
   bookEvents: [
     {
       id: 1,
-      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_book_1_innmwo.jpg",
+      url:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505450/ch_book_1_innmwo.jpg",
       caption: "'రాతికన్ను' పుస్తకావిష్కరణ సభలో శీర్పి చంద్రశేఖర్",
     },
     {
       id: 2,
-      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505451/ch_book_release_cwktl4.jpg",
+      url:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505451/ch_book_release_cwktl4.jpg",
       caption: "'కాలుతున్న వెన్నెల' పుస్తకావిష్కరణ సభ",
     },
     {
       id: 3,
-      url: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505454/ch_library_gmhiir.jpg",
+      url:
+        "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505454/ch_library_gmhiir.jpg",
       caption: "గ్రంథాలయాలలో శీర్పి చంద్రశేఖర్ పుస్తకాలు",
     },
   ],
 
-  // H. Gallery & Contact
+  // I. Gallery & Contact
   gallery: {
     profileImage:
       "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774118073/chandu_profile_pic_knmizc.jpg",
@@ -300,6 +381,13 @@ export const siteData = {
     ],
   },
 
+  // J. Youth Orbit
+  youthOrbit: {
+    logo: null,
+    image:
+      "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_youth_orbit_x3xexc.jpg",
+  },
+
   contact: {
     email: "Chandrasekharseerpi@gmail.com",
     facebook: "https://www.facebook.com/valmiki.chandu.899849",
@@ -308,3 +396,4 @@ export const siteData = {
 } as const;
 
 export type SiteData = typeof siteData;
+```
