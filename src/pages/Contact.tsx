@@ -38,8 +38,11 @@ export default function Contact() {
   });
 
   const onSubmit = (values: ContactFormValues) => {
-    toast.success("మీ సందేశం విజయవంతంగా పంపబడింది. ధన్యవాదాలు!");
-    form.reset();
+  const subject = `వెబ్‌సైట్ సంప్రదింపు: ${values.name}`;
+      const body = `పేరు: ${values.name}\nఈమెయిల్: ${values.email}\nఫోన్: ${values.phone}\n\n${values.message}`;
+      window.location.href = `mailto:Chandrasekharseerpi@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      toast.success("మీ సందేశం విజయవంతంగా పంపబడింది. ధన్యవాదాలు!");
+      form.reset();
   };
 
   return (
