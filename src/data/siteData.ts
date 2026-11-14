@@ -127,8 +127,7 @@ export const siteData = {
   awards: [
     {
       id: 1,
-      title: "చింతోజు బ్రహ్మయ్య బాలసాహిత్య పురస్కారం",
-      description: "సాహిత్య ప్రపంచంలోకి బాలకవిగా శీర్పి చంద్రశేఖర్",
+      title: "సాహిత్య ప్రపంచంలోకి బాలకవిగా శీర్పి చంద్రశేఖర్",
       image: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794488662/ch2_xbz5td.jpg",
     },
     {
