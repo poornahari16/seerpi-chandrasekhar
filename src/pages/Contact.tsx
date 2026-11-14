@@ -132,7 +132,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-foreground">ఇన్‌స్టాగ్రామ్</h4>
                     <a
-                      href="https://www.instagram.com/incognitic_emperor_2"
+                      href="https://www.instagram.com/seerpi_chandrasekhar_sukavi"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"

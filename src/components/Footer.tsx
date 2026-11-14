@@ -30,7 +30,7 @@ export function Footer() {
               ఫేస్‌బుక్
             </a>
             <a
-              href="https://www.instagram.com/incognitic_emperor_2"
+              href="https://www.instagram.com/seerpi_chandrasekhar_sukavi"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-foreground transition-colors"

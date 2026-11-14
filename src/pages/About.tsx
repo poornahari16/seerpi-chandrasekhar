@@ -1,5 +1,11 @@
+import { useState } from "react";
 import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { ZoomModal } from "@/components/ZoomModal";
+import { DegaIssues } from "@/components/DegaIssues";
+import { YouthOrbitLogo } from "@/components/YouthOrbitLogo";
+import { Badge } from "@/components/ui/badge";
+import { siteData } from "@/data/siteData";
 
 const personalDetails = [
 { label: "జన్మదినం", value: "02.08.2005" },
@@ -8,49 +14,21 @@ const personalDetails = [
 { label: "నివాసం", value: "శీర్పి గ్రామం, బెళుగుప్ప మండలం, అనంతపురం జిల్లా" }];
 
 
-const education = [
-{ stage: "పదవ తరగతి", place: "జిల్లా పరిషత్ ఉన్నత పాఠశాల, వెంకటాద్రిపల్లి" },
-{ stage: "ఇంటర్మీడియట్", place: "శ్రీ వివేకానంద జూనియర్ కళాశాల, కళ్యాణదుర్గం" },
-{ stage: "డిగ్రీ", place: "మిసెస్ ఏ.వి.యన్ కళాశాల, విశాఖపట్నం" }];
+const education = siteData.personal.education;
 
 
-const gurus = [
-"శీర్పి శ్రీకాంత్ గారు",
-"తిప్పేస్వామి గారు",
-"కొత్తపల్లి సురేష్ గారు",
-"వెంకటరమణ గారు"];
+const gurus = siteData.personal.mentors;
 
 
-const books = [
-{ title: "మట్టి రెక్కల చందమామ", desc: "ఎనిమిదవ తరగతి చదువుతున్న సమయంలోనే రాసిన మొదటి కవితా సంపుటి" },
-{ title: "కాలుతున్న వెన్నెల", desc: "ఇంటర్మీడియట్ విద్యార్థిగా వెలువరించిన కవితా సంపుటి" },
-{ title: "గొంతు తెగిన అక్షరం", desc: "డిగ్రీ మొదటి సంవత్సరంలో రాసిన పుస్తకం" },
-{ title: "రాతికన్ను", desc: "రాయలసీమ ప్రాంత సమస్యలపై డిగ్రీ ద్వితీయ సంవత్సరంలో వెలువరించిన కవితా సంకలనం" },
-{ title: "ఆకుపచ్చని దుఃఖం", desc: "ఉత్తరాంధ్ర జీవనశైలి నేపథ్యంపై వెలువడిన కవితా సంకలనం" }];
+const books = siteData.books;
 
 
-const awards = [
-"చింతోజు బ్రహ్మయ్య బాలసాహిత్య పురస్కారం",
-"పెందోట వెంకటేశ్వర్లు బాలసాహిత్య పురస్కారం",
-"నిజాం వెంకటేశం సాహిత్య పురస్కారం",
-"కొనిరెడ్డి ఫౌండేషన్ & చదువుల సాహిత్య వేదిక వారి అభినందన సత్కారం",
-"కేంద్ర ప్రభుత్వం నిర్వహించిన 'యువ ఉత్సవ్' (యంగ్ రైటర్స్ క్యాంప్), విశాఖపట్నంలో ప్రథమ స్థానం"];
+const awards = siteData.awards;
 
 
 const birudulu = ["కవి డేగ", "అభినవ వాల్మీకి"];
 
 const kalamPerlu = ["శీర్పి వాల్మీకి"];
-
-const socialWork = [
-{
-  title: "'డేగ' అంతర్జాల మాసపత్రిక",
-  desc: "ఈ పత్రికకు సంపాదకుడిగా వ్యవహరిస్తూ, అనేక మంది కొత్త కవులను ప్రోత్సహిస్తూ సమాజ చైతన్యం కోసం కృషి చేస్తున్నారు"
-},
-{
-  title: "యూత్ ఆర్బిట్ సంస్థ",
-  desc: "ఈ సంస్థ వ్యవస్థాపకునిగా యువతలో స్ఫూర్తిని, సామాజిక బాధ్యతను పెంపొందించే ఎన్నో కార్యక్రమాలకు శ్రీకారం చుట్టారు"
-}];
-
 
 function SectionTitle({ children }: {children: React.ReactNode;}) {
   return (
@@ -63,6 +41,8 @@ function SectionTitle({ children }: {children: React.ReactNode;}) {
 }
 
 export default function About() {
+  const [zoomImage, setZoomImage] = useState<string | null>(null);
+
   return (
     <Layout>
       <div className="container max-w-3xl mx-auto px-6 pt-16 pb-20 space-y-20">
@@ -123,9 +103,12 @@ export default function About() {
         <section>
           <SectionTitle>గురువులు</SectionTitle>
           <ScrollReveal delay={60}>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               {gurus.map((g) =>
-              <li key={g} className="font-sans-telugu text-foreground text-base">{g}</li>
+              <li key={g.name} className="font-sans-telugu text-foreground text-base">
+                  <span className="font-semibold">{g.name}</span>
+                  <span className="block text-sm text-muted-foreground">{g.role}</span>
+                </li>
               )}
             </ul>
           </ScrollReveal>
@@ -137,10 +120,18 @@ export default function About() {
           <SectionTitle>రచనలు</SectionTitle>
           <div className="space-y-6">
             {books.map((b, i) =>
-            <ScrollReveal key={b.title} delay={i * 60}>
+            <ScrollReveal key={b.id} delay={i * 60}>
                 <div className="bg-surface rounded-sm p-5">
-                  <h3 className="font-serif-telugu text-lg font-semibold text-headline">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground font-sans-telugu mt-1">{b.desc}</p>
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-serif-telugu text-lg font-semibold text-headline">{b.title}</h3>
+                    {b.id === 5 && (
+                      <Badge variant="destructive" className="shrink-0">
+                        త్వరలో విడుదల
+                      </Badge>
+                    )}
+                  </div>
+                  <p className="text-sm text-muted-foreground font-sans-telugu mt-1">{b.stage}</p>
+                  <p className="text-sm text-muted-foreground font-sans-telugu mt-2 leading-relaxed">{b.description}</p>
                 </div>
               </ScrollReveal>
             )}
@@ -155,15 +146,103 @@ export default function About() {
             <p className="prose-telugu text-foreground mb-6 text-pretty">
               సాహిత్య సృజనతో పాటు సామాజిక సేవా కార్యక్రమాల్లో చంద్రశేఖర్ చురుగ్గా పాల్గొంటున్నారు:
             </p>
+            {/* డేగ ఆన్‌లైన్ మాసపత్రిక — logo only (no photographs) */}
             <div className="space-y-5">
-              {socialWork.map((s) =>
-              <div key={s.title} className="bg-surface rounded-sm p-5">
-                  <h3 className="font-serif-telugu text-lg font-semibold text-headline">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground font-sans-telugu mt-1">{s.desc}</p>
+              <div className="bg-surface rounded-sm p-5">
+                <div className="flex flex-col sm:flex-row items-center gap-5">
+                  <button
+                    type="button"
+                    onClick={() => setZoomImage(siteData.hero.degaLogo)}
+                    className="shrink-0 cursor-pointer"
+                    aria-label="డేగ లోగో పెద్దగా చూడటానికి క్లిక్ చేయండి"
+                  >
+                    <img
+                      src={siteData.hero.degaLogo}
+                      alt="డేగ లోగో"
+                      className="w-28 h-28 object-contain"
+                    />
+                  </button>
+                  <div>
+                    <h3 className="font-serif-telugu text-lg font-semibold text-headline">
+                      'డేగ' అంతర్జాల మాసపత్రిక
+                    </h3>
+                    <p className="text-sm text-muted-foreground font-sans-telugu mt-1">
+                      ఈ పత్రికకు సంపాదకుడిగా వ్యవహరిస్తూ, అనేక మంది కొత్త కవులను
+                      ప్రోత్సహిస్తూ సమాజ చైతన్యం కోసం కృషి చేస్తున్నారు
+                    </p>
+                    <p className="text-xs text-muted-foreground font-sans-telugu mt-2">
+                      లోగోపై క్లిక్ చేస్తే పెద్దగా చూడవచ్చు
+                    </p>
+                  </div>
                 </div>
-              )}
+              </div>
+
+              {/* మార్చి – అక్టోబర్ 2026 సంచికలు */}
+              <div>
+                <h4 className="font-serif-telugu text-base font-semibold text-headline text-center mb-4">
+                  మాసపత్రిక సంచికలు
+                </h4>
+                <DegaIssues />
+              </div>
+
+              {/* యూత్ ఆర్బిట్ — logo only (no photographs) */}
+              <div className="bg-surface rounded-sm p-5">
+                <div className="flex flex-col sm:flex-row items-center gap-5">
+                  <div className="shrink-0">
+                    <YouthOrbitLogo className="w-28 h-28" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif-telugu text-lg font-semibold text-headline">
+                      యూత్ ఆర్బిట్ సంస్థ
+                    </h3>
+                    <p className="text-sm text-muted-foreground font-sans-telugu mt-1">
+                      ఈ సంస్థ వ్యవస్థాపకునిగా యువతలో స్ఫూర్తిని, సామాజిక
+                      బాధ్యతను పెంపొందించే ఎన్నో కార్యక్రమాలకు శ్రీకారం
+                      చుట్టారు
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* SUKAVI — logo only, planning/development stage */}
+              <div className="bg-surface rounded-sm p-5">
+                <div className="flex flex-col sm:flex-row items-center gap-5">
+                  <button
+                    type="button"
+                    onClick={() => setZoomImage(siteData.hero.sukaviLogo)}
+                    className="shrink-0 cursor-pointer"
+                    aria-label="SUKAVI లోగో పెద్దగా చూడటానికి క్లిక్ చేయండి"
+                  >
+                    <img
+                      src={siteData.hero.sukaviLogo}
+                      alt="SUKAVI లోగో"
+                      className="w-28 h-28 object-contain"
+                    />
+                  </button>
+                  <div>
+                    <h3 className="font-serif-telugu text-lg font-semibold text-headline">
+                      SUKAVI ఆహార ప్రాసెసింగ్ ఆలోచన
+                    </h3>
+                    <Badge
+                      variant="outline"
+                      className="mt-2 border-primary text-primary"
+                    >
+                      ప్రణాళిక మరియు అభివృద్ధి దశలో ఉన్న ఆలోచన
+                    </Badge>
+                    <p className="text-sm text-muted-foreground font-sans-telugu mt-2 leading-relaxed">
+                      {siteData.initiatives[2].description}
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </ScrollReveal>
+
+          {/* Full-screen zoom modal for logos */}
+          <ZoomModal
+            src={zoomImage}
+            onClose={() => setZoomImage(null)}
+          />
           <div className="section-divider mt-12" />
         </section>
 
@@ -171,11 +250,24 @@ export default function About() {
         <section>
           <SectionTitle>పురస్కారాలు</SectionTitle>
           <ScrollReveal delay={60}>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {awards.map((a) =>
-              <li key={a} className="font-sans-telugu text-foreground text-base flex items-start gap-2">
-                  <span className="text-accent mt-1">✦</span>
-                  {a}
+              <li key={a.id}>
+                  <button
+                    type="button"
+                    onClick={() => setZoomImage(a.image)}
+                    className="w-full text-left bg-surface rounded-sm p-4 flex items-start gap-3 cursor-pointer hover:bg-muted/50 transition-colors"
+                  >
+                    <span className="text-accent mt-1">✦</span>
+                    <span>
+                      <span className="font-sans-telugu text-foreground text-base">
+                        {a.title}
+                      </span>
+                      <span className="block text-xs text-muted-foreground font-sans-telugu mt-1">
+                        పెద్దగా చూడటానికి క్లిక్ చేయండి
+                      </span>
+                    </span>
+                  </button>
                 </li>
               )}
             </ul>

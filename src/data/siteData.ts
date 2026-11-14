@@ -6,6 +6,8 @@ export const siteData = {
       "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1774118073/chandu_profile_pic_knmizc.jpg",
     degaLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489698/dega_logo_amh89s.jpg",
     sukaviLogo: "https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794489699/sukavi_logo_zhqkvm.jpg",
+    // Slot for the యూత్ ఆర్బిట్ (Youth Orbit) logo — ready for a future URL.
+    youthOrbitLogo: null as string | null,
     headlineTop: "ఒక కలం - ఒక కర్తవ్యం - ఒక చరిత్ర",
     headlineName: "శీర్పి చంద్రశేఖర్",
     subheadline:
@@ -251,6 +253,50 @@ export const siteData = {
     },
   ],
 
+  // F2. డేగ ఆన్‌లైన్ మాసపత్రిక — verified March–October 2026 issues
+  degaIssues: [
+    {
+      id: 1,
+      month: "మార్చి 2026",
+      url: "https://drive.google.com/file/d/1t_yfxErxsbTk7drR2pbC-RYm-VCUg3fB/view?usp=drive_link",
+    },
+    {
+      id: 2,
+      month: "ఏప్రిల్ 2026",
+      url: "https://drive.google.com/file/d/16caTrHdiaFQxTZsiB6VO3gH9LmQkLGKx/view?usp=drive_link",
+    },
+    {
+      id: 3,
+      month: "మే 2026",
+      url: "https://drive.google.com/file/d/1Y-oJoaRNmZS2i9ivK6yDAppnUWTpncio/view?usp=drive_link",
+    },
+    {
+      id: 4,
+      month: "జూన్ 2026",
+      url: "https://drive.google.com/file/d/1Nv4BmYQ8OC0HZBA6UPqzOPe-ACi3SeAn/view?usp=drive_link",
+    },
+    {
+      id: 5,
+      month: "జూలై 2026",
+      url: "https://drive.google.com/file/d/1UqfLw5nSc4ksYM42xu1l9PboJUV4tP9i/view?usp=drive_link",
+    },
+    {
+      id: 6,
+      month: "ఆగస్టు 2026",
+      url: "https://drive.google.com/file/d/1N31UhVkri0PLXnuYIbF0lbZJ_idtY91C/view?usp=drive_link",
+    },
+    {
+      id: 7,
+      month: "సెప్టెంబర్ 2026",
+      url: "https://drive.google.com/file/d/1-WpM9qKADngerKtnMat1bYxeK8vrbRQu/view?usp=drive_link",
+    },
+    {
+      id: 8,
+      month: "అక్టోబర్ 2026",
+      url: "https://drive.google.com/file/d/1Q8L7MKeRPFKQwJTO_I8lAT7H7HjdhwY-/view?usp=drive_link",
+    },
+  ],
+
   // G. Book Events
   bookEvents: [
     {
@@ -311,7 +357,7 @@ export const siteData = {
   contact: {
     email: "Chandrasekharseerpi@gmail.com",
     facebook: "https://www.facebook.com/valmiki.chandu.899849",
-    instagram: "https://www.instagram.com/incognitic_emperor_2",
+    instagram: "https://www.instagram.com/seerpi_chandrasekhar_sukavi",
   },
 } as const;
 

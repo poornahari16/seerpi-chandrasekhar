@@ -5,6 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { Layout } from "@/components/Layout";
+import { ZoomModal } from "@/components/ZoomModal";
+import { DegaIssues } from "@/components/DegaIssues";
+import { YouthOrbitLogo } from "@/components/YouthOrbitLogo";
 
 const Index = () => {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -15,7 +19,8 @@ const Index = () => {
     .slice(0, 7);
 
   return (
-    <div className="min-h-screen bg-background">
+    <Layout>
+    <div className="bg-background">
       {/* Section 1: Hero Section */}
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
@@ -48,7 +53,7 @@ const Index = () => {
                     size="lg"
                     className="text-lg px-8 py-6 bg-primary hover:bg-primary/90"
                   >
-                    <Link to="/books">{siteData.hero.titles[0]} చదవండి</Link>
+                    <Link to="/books">పుస్తకాలు చదవండి</Link>
                   </Button>
                   <Button
                     asChild
@@ -56,7 +61,7 @@ const Index = () => {
                     size="lg"
                     className="text-lg px-8 py-6 border-2"
                   >
-                    <Link to="/about">{siteData.hero.titles[1]} చదవండి</Link>
+                    <Link to="/about">పరిచయం చూడండి</Link>
                   </Button>
                 </div>
               </div>
@@ -127,11 +132,20 @@ const Index = () => {
                   className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/20"
                 >
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <img
-                      src={book.cover || "https://via.placeholder.com/300x400?text=ముండాలి"}
-                      alt={book.title}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                    {book.cover ? (
+                      <img
+                        src={book.cover}
+                        alt={book.title}
+                        onClick={() => setLightboxImage(book.cover)}
+                        className="w-full h-64 object-cover cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <div className="w-full h-64 bg-muted/40 flex items-center justify-center">
+                        <span className="text-muted-foreground font-sans-telugu">
+                          పుస్తక ముఖచిత్రం త్వరలో
+                        </span>
+                      </div>
+                    )}
                     {book.id === 5 && (
                       <div className="absolute top-2 right-2">
                         <Badge variant="destructive" className="font-bold">
@@ -234,14 +248,14 @@ const Index = () => {
                         </h3>
                         <p className="text-muted-foreground">
                           "జీరంగి" పురుగుపై రాసిన తొలి కవిత
-                        </p>
-                      </Card>
-                    </div>
-                    <div className="w-1/2 pl-8">
-                      <div className="text-sm text-muted-foreground">
-                        2001
+                          </p>
+                        </Card>
                       </div>
-                    </div>
+                      <div className="w-1/2 pl-8">
+                        <div className="text-sm text-muted-foreground">
+                          బాల్యం
+                        </div>
+                      </div>
                   </div>
 
                   {/* 8th Class - మట్టి రెక్కల చందమామ */}
@@ -249,7 +263,7 @@ const Index = () => {
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
                     <div className="w-1/2 pr-8">
                       <div className="text-sm text-muted-foreground text-right">
-                        2008
+                        పాఠశాల దశ
                       </div>
                     </div>
                     <div className="w-1/2 pl-8">
@@ -281,7 +295,7 @@ const Index = () => {
                     </div>
                     <div className="w-1/2 pl-8">
                       <div className="text-sm text-muted-foreground">
-                        2012
+                        ఇంటర్ దశ
                       </div>
                     </div>
                   </div>
@@ -291,7 +305,7 @@ const Index = () => {
                     <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10" />
                     <div className="w-1/2 pr-8">
                       <div className="text-sm text-muted-foreground text-right">
-                        2018-2020
+                        డిగ్రీ దశ
                       </div>
                     </div>
                     <div className="w-1/2 pl-8">
@@ -345,7 +359,7 @@ const Index = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        క్లిక్ చేయండి జూమ్ చేయడానికి
+                        పెద్దగా చూడటానికి క్లిక్ చేయండి
                       </Badge>
                     </div>
                   </div>
@@ -402,7 +416,7 @@ const Index = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        క్లిక్ చేయండి జూమ్ చేయడానికి
+                        పెద్దగా చూడటానికి క్లిక్ చేయండి
                       </Badge>
                     </div>
                   </div>
@@ -441,49 +455,47 @@ const Index = () => {
           </ScrollReveal>
 
           <ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <Card className="p-8 hover:shadow-xl transition-shadow">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">
-                    వ్యవస్థాపకులు మరియు సంపాదకులు
-                  </h3>
-                  <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                    {siteData.initiatives[0].description}
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        నవతరం కవులు, రచయితలను ప్రోత్సహించడం
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        సాహిత్య వ్యక్తీకరణకు వేదిక కల్పించడం
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        సామాజిక చైతన్యం పెంపొందించడం
-                      </span>
-                    </div>
+            <div className="max-w-4xl mx-auto">
+              <Card className="p-8 hover:shadow-xl transition-shadow">
+                <h3 className="text-2xl font-bold mb-6 text-primary">
+                  వ్యవస్థాపకులు మరియు సంపాదకులు
+                </h3>
+                <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                  {siteData.initiatives[0].description}
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full" />
+                    <span className="text-sm">
+                      నవతరం కవులు, రచయితలను ప్రోత్సహించడం
+                    </span>
                   </div>
-                </Card>
-              </div>
-              <div>
-                <div className="relative">
-                  <img
-                    src={siteData.gallery.images[21].url}
-                    alt="డేగ మాసపత్రిక పేజీ"
-                    className="w-full rounded-2xl shadow-xl object-cover"
-                  />
-                  <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-full font-bold shadow-lg">
-                    త్వరలో PDF లు అందుబాటులోకి
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full" />
+                    <span className="text-sm">
+                      సాహిత్య వ్యక్తీకరణకు వేదిక కల్పించడం
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full" />
+                    <span className="text-sm">
+                      సామాజిక చైతన్యం పెంపొందించడం
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Card>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <div className="max-w-6xl mx-auto mt-12">
+              <h3 className="text-2xl font-bold text-center mb-2">
+                మాసపత్రిక సంచికలు
+              </h3>
+              <p className="text-center text-muted-foreground font-sans-telugu mb-8">
+                మార్చి నుండి అక్టోబర్ 2026 వరకు సంచికలు
+              </p>
+              <DegaIssues />
             </div>
           </ScrollReveal>
         </div>
@@ -505,14 +517,8 @@ const Index = () => {
       
                 <ScrollReveal>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div className="order-2 lg:order-1">
-                      <div className="relative">
-                        <img
-                          src={siteData.gallery.images[23].url}
-                          alt="యూత్ ఆర్బిట్ కార్యక్రమం"
-                          className="w-full rounded-2xl shadow-xl object-cover"
-                        />
-                      </div>
+                    <div className="order-2 lg:order-1 flex justify-center items-center">
+                      <YouthOrbitLogo className="w-52 h-52 md:w-64 md:h-64" />
                     </div>
                     <div className="order-1 lg:order-2">
                       <Card className="p-8 hover:shadow-xl transition-shadow">
@@ -579,7 +585,7 @@ const Index = () => {
                   variant="outline"
                   className="text-lg px-6 py-2 border-2 border-primary text-primary"
                 >
-                  ప్రణాళిక దశలో ఉన్న ఆలోచన
+                  ప్రణాళిక మరియు అభివృద్ధి దశలో ఉన్న ఆలోచన
                 </Badge>
                 <div className="w-24 h-1 bg-primary mx-auto mt-8" />
               </div>
@@ -607,39 +613,13 @@ const Index = () => {
                   </div>
                 </Card>
               </div>
-              <div className="relative">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-4">
-                    <img
-                      src="https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505854/ch_meet_ju8mtb.jpg"
-                      alt="రైతులతో భేటీ"
-                      className="w-full rounded-lg object-cover shadow-md"
-                    />
-                    <img
-                      src="https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505453/ch_stage1_pnfwpz.jpg"
-                      alt="సాహిత్య వేదిక"
-                      className="w-full rounded-lg object-cover shadow-md"
-                    />
-                  </div>
-                  <div className="pt-8">
-                    <img
-                      src="https://res.cloudinary.com/dtvcfs1lr/image/upload/v1794505452/ch_some_qxqvzn.jpg"
-                      alt="శ్రామిక ఉత్సవ్"
-                      className="w-full rounded-lg object-cover shadow-md mb-4"
-                    />
-                    <div className="bg-white p-4 rounded-lg shadow-md">
-                      <div className="flex items-center gap-2 mb-2">
-                        <div className="w-3 h-3 bg-green-500 rounded-full" />
-                        <span className="text-sm font-medium">
-                          యువ పారిశ్రామికవేత్త
-                        </span>
-                      </div>
-                      <p className="text-xs text-muted-foreground">
-                        వివిధ గ్రామీణ కమ్యూనిటీలతో క్రియాశీలంగా పాల్గొంటున్న
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex justify-center items-center">
+                <img
+                  src={siteData.hero.sukaviLogo}
+                  alt="SUKAVI లోగో"
+                  className="w-56 h-56 md:w-72 md:h-72 object-contain cursor-pointer"
+                  onClick={() => setLightboxImage(siteData.hero.sukaviLogo)}
+                />
               </div>
             </div>
           </ScrollReveal>
@@ -680,7 +660,7 @@ const Index = () => {
                                                   variant="secondary"
                                                   className="opacity-0 group-hover:opacity-100 transition-opacity text-xs"
                                                 >
-                                                  చూడండి
+                                                  పెద్దగా చూడటానికి క్లిక్ చేయండి
                                                 </Badge>
                       </div>
                     </div>
@@ -738,32 +718,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Lightbox Modal */}
-      {lightboxImage && (
-        <div
-          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-          onClick={() => setLightboxImage(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <img
-              src={lightboxImage}
-              alt="చిత్రం పెద్దగా చూపించడం"
-              className="w-full h-full object-contain"
-            />
-            <Button
-              variant="secondary"
-              className="absolute top-4 right-4"
-              onClick={(e) => {
-                e.stopPropagation();
-                setLightboxImage(null);
-              }}
-            >
-              మూసివేయండి
-            </Button>
-          </div>
-        </div>
-      )}
+      {/* Full-screen zoom modal */}
+      <ZoomModal
+        src={lightboxImage}
+        onClose={() => setLightboxImage(null)}
+      />
     </div>
+    </Layout>
   );
 };
 
