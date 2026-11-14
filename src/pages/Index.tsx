@@ -24,13 +24,10 @@ const Index = () => {
               <div className="md:w-1/2">
                 <div className="relative">
                   <img
-                    src={siteData.hero.mainPortrait}
-                    alt="శీర్పి చంద్రశేఖర్"
-                    className="w-full max-w-md mx-auto md:max-w-lg rounded-2xl shadow-2xl object-cover object-top"
-                  />
-                  <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-full font-bold text-lg shadow-lg">
-                    20వ ఎయిర్‌బ్లోడ్
-                  </div>
+                                      src={siteData.hero.mainPortrait}
+                                      alt="శీర్పి చంద్రశేఖర్"
+                                      className="w-full max-w-md mx-auto md:max-w-lg rounded-2xl shadow-2xl object-cover object-top"
+                                    />
                 </div>
               </div>
               <div className="md:w-1/2 text-center md:text-left">
@@ -493,81 +490,76 @@ const Index = () => {
       </section>
 
       {/* Section 8: Youth Orbit (యూత్ ఆర్బిట్) */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <img
-                  src={siteData.initiatives[1].image}
-                  alt="యూత్ ఆర్బిట్"
-                  className="w-32 h-32 mx-auto mb-6 object-contain rounded-full border-4 border-primary/20"
-                />
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  యూత్ ఆర్బిట్
-                </h2>
-                <div className="w-24 h-1 bg-primary mx-auto mb-8" />
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="relative">
-                  <img
-                    src={siteData.initiatives[1].image}
-                    alt="యూత్ ఆర్బిట్ కార్యక్రమం"
-                    className="w-full rounded-2xl shadow-xl object-cover"
-                  />
-                </div>
-              </div>
-              <div className="order-1 lg:order-2">
-                <Card className="p-8 hover:shadow-xl transition-shadow">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">
-                    వ్యవస్థాపకులు
-                  </h3>
-                  <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                    {siteData.initiatives[1].description}
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        యువతలో నాయకత్వ లక్షణాలు
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        సామాజిక బాధ్యత
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        సేవా దృక్పథం
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        సృజనాత్మకత
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full" />
-                      <span className="text-sm">
-                        అవగాహన పెంపొందించే వేదిక
-                      </span>
+            <section className="py-20 bg-background">
+              <div className="container mx-auto px-4">
+                <ScrollReveal>
+                  <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-12">
+                      <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                        యూత్ ఆర్బిట్
+                      </h2>
+                      <div className="w-24 h-1 bg-primary mx-auto mb-8" />
                     </div>
                   </div>
-                </Card>
+                </ScrollReveal>
+      
+                <ScrollReveal>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="order-2 lg:order-1">
+                      <div className="relative">
+                        <img
+                          src={siteData.gallery.images[23].url}
+                          alt="యూత్ ఆర్బిట్ కార్యక్రమం"
+                          className="w-full rounded-2xl shadow-xl object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="order-1 lg:order-2">
+                      <Card className="p-8 hover:shadow-xl transition-shadow">
+                        <h3 className="text-2xl font-bold mb-6 text-primary">
+                          వ్యవస్థాపకులు
+                        </h3>
+                        <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                          {siteData.initiatives[1].description}
+                        </p>
+                        <div className="space-y-4">
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full" />
+                            <span className="text-sm">
+                              యువతలో నాయకత్వ లక్షణాలు
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full" />
+                            <span className="text-sm">
+                              సామాజిక బాధ్యత
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full" />
+                            <span className="text-sm">
+                              సేవా దృక్పథం
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full" />
+                            <span className="text-sm">
+                              సృజనాత్మకత
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-primary rounded-full" />
+                            <span className="text-sm">
+                              అవగాహన పెంపొందించే వేదిక
+                            </span>
+                          </div>
+                        </div>
+                      </Card>
+                    </div>
+                  </div>
+                </ScrollReveal>
               </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
+            </section>
 
       {/* Section 9: SUKAVI Food Processing Initiative (SUKAVI ఆహార ప్రాసెసింగ్ ఆలోచన) */}
       <section className="py-20 bg-muted/30">
@@ -670,7 +662,7 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               {/* Featured Gallery */}
               <div className="lg:col-span-2">
-                <h3 className="text-2xl font-bold mb-8">Featured Gallery</h3>
+                <h3 className="text-2xl font-bold mb-8">ప్రముఖ చిత్రమాలిక</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {featuredGalleryImages.map((img, index) => (
                     <div
@@ -685,11 +677,11 @@ const Index = () => {
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center">
                         <Badge
-                          variant="secondary"
-                          className="opacity-0 group-hover:opacity-100 transition-opacity text-xs"
-                        >
-                          View
-                        </Badge>
+                                                  variant="secondary"
+                                                  className="opacity-0 group-hover:opacity-100 transition-opacity text-xs"
+                                                >
+                                                  చూడండి
+                                                </Badge>
                       </div>
                     </div>
                   ))}
@@ -711,31 +703,31 @@ const Index = () => {
                 <Card className="p-6 hover:shadow-xl transition-shadow">
                   <div className="space-y-6">
                     <div>
-                      <h4 className="font-semibold mb-2">Email</h4>
+                      <h4 className="font-semibold mb-2">ఈమెయిల్</h4>
                       <p className="text-muted-foreground">
                         {siteData.contact.email}
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Facebook</h4>
+                      <h4 className="font-semibold mb-2">ఫేస్‌బుక్</h4>
                       <a
                         href={siteData.contact.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        Facebook Profile
+                        ఫేస్‌బుక్ ప్రొఫైల్
                       </a>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Instagram</h4>
+                      <h4 className="font-semibold mb-2">ఇన్‌స్టాగ్రామ్</h4>
                       <a
                         href={siteData.contact.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        Instagram Profile
+                        ఇన్‌స్టాగ్రామ్ ప్రొఫైల్
                       </a>
                     </div>
                   </div>
