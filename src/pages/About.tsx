@@ -263,6 +263,11 @@ export default function About() {
                       <span className="font-sans-telugu text-foreground text-base">
                         {a.title}
                       </span>
+                      {"description" in a && (
+                        <span className="block text-sm text-muted-foreground font-sans-telugu mt-1">
+                          {a.description}
+                        </span>
+                      )}
                       <span className="block text-xs text-muted-foreground font-sans-telugu mt-1">
                         పెద్దగా చూడటానికి క్లిక్ చేయండి
                       </span>

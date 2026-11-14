@@ -62,6 +62,9 @@ export default function Books() {
                   <p className="text-sm text-muted-foreground font-sans-telugu leading-relaxed mb-4">
                     {book.stage}
                   </p>
+                  <p className="text-sm text-foreground/80 font-sans-telugu leading-relaxed mb-4">
+                    {book.description}
+                  </p>
                   {book.pdf ? (
                     <div className="flex gap-3">
                       <a

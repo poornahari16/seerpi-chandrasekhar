@@ -1,15 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { ZoomModal } from "@/components/ZoomModal";
-import { Button } from "@/components/ui/button";
 import { siteData } from "@/data/siteData";
 
-// Curated selection: general photographs plus featured event/activity photographs.
-const images = siteData.gallery.images.filter(
-  (img) => img.category !== "events" || img.featured,
-);
+const images = siteData.gallery.images;
 
 export default function Gallery() {
   const [zoomImage, setZoomImage] = useState<string | null>(null);
@@ -49,16 +44,6 @@ export default function Gallery() {
             </ScrollReveal>
           ))}
         </div>
-
-        <ScrollReveal>
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="px-10 py-6">
-              <Link to="/gallery/all">
-                ఎంపిక చేసిన అన్ని చిత్రాల కోసం ఇక్కడ క్లిక్ చేయండి
-              </Link>
-            </Button>
-          </div>
-        </ScrollReveal>
       </div>
 
       {/* Full-screen zoom modal */}

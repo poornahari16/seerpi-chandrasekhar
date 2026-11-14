@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 /**
  * యూత్ ఆర్బిట్ (Youth Orbit) logo badge.
  * Uses `siteData.hero.youthOrbitLogo` once a URL is available; until then it
- * renders a clean, properly proportioned Telugu emblem that scales with its
- * container.
+ * renders a crisp vector emblem — an orbiting satellite around a planet with
+ * Telugu typography — that scales cleanly at any size (square, viewBox-based).
  */
 export function YouthOrbitLogo({ className }: { className?: string }) {
   const url = siteData.hero.youthOrbitLogo;
@@ -21,28 +21,71 @@ export function YouthOrbitLogo({ className }: { className?: string }) {
   }
 
   return (
-    <div
-      className={cn(
-        "relative flex aspect-square items-center justify-center rounded-full",
-        "border-4 border-primary/30 bg-primary/5 shadow-lg",
-        "[container-type:inline-size]",
-        className,
-      )}
+    <svg
+      viewBox="0 0 200 200"
       role="img"
       aria-label="యూత్ ఆర్బిట్ లోగో"
+      className={cn("block", className)}
     >
-      <div className="absolute inset-[8%] rounded-full border border-dashed border-primary/40" />
-      <div className="relative text-center px-[10%]">
-        <span className="block font-serif-telugu font-bold text-headline leading-tight text-[15cqw]">
-          యూత్ ఆర్బిట్
-        </span>
-        <span
-          className="mt-[4%] block font-semibold tracking-[0.25em] text-primary text-[6cqw]"
-          style={{ textIndent: "0.25em" }}
-        >
-          YOUTH ORBIT
-        </span>
-      </div>
-    </div>
+      {/* Emblem base */}
+      <circle
+        cx="100"
+        cy="100"
+        r="94"
+        fill="hsl(40 33% 96%)"
+        stroke="hsl(30 15% 25%)"
+        strokeWidth="5"
+      />
+      <circle
+        cx="100"
+        cy="100"
+        r="84"
+        fill="none"
+        stroke="hsl(30 15% 25%)"
+        strokeOpacity="0.35"
+        strokeWidth="1.5"
+        strokeDasharray="4 5"
+      />
+
+      {/* Planet + orbit */}
+      <circle cx="100" cy="62" r="13" fill="hsl(18 45% 42%)" />
+      <g transform="rotate(-25 100 62)">
+        <ellipse
+          cx="100"
+          cy="62"
+          rx="46"
+          ry="15"
+          fill="none"
+          stroke="hsl(30 15% 25%)"
+          strokeWidth="3"
+        />
+        <circle cx="146" cy="62" r="6" fill="hsl(30 15% 25%)" />
+      </g>
+
+      {/* Telugu typography */}
+      <text
+        x="100"
+        y="136"
+        textAnchor="middle"
+        fontFamily="'Noto Serif Telugu', serif"
+        fontWeight="700"
+        fontSize="26"
+        fill="hsl(30 12% 12%)"
+      >
+        యూత్ ఆర్బిట్
+      </text>
+      <text
+        x="100"
+        y="163"
+        textAnchor="middle"
+        fontFamily="'Noto Sans Telugu', sans-serif"
+        fontWeight="600"
+        fontSize="11"
+        letterSpacing="4"
+        fill="hsl(18 45% 42%)"
+      >
+        YOUTH ORBIT
+      </text>
+    </svg>
   );
 }

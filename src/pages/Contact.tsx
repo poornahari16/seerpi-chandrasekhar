@@ -15,6 +15,7 @@ import { Card } from "@/components/ui/card";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { toast } from "sonner";
 
 const contactSchema = z.object({
   name: z.string().min(2, "నామం కనీసం 2 అక్షరాలలో ఉండాలి"),
@@ -37,7 +38,8 @@ export default function Contact() {
   });
 
   const onSubmit = (values: ContactFormValues) => {
-    console.log("Contact form submitted:", values);
+    toast.success("మీ సందేశం విజయవంతంగా పంపబడింది. ధన్యవాదాలు!");
+    form.reset();
   };
 
   return (

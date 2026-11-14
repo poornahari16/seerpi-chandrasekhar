@@ -367,12 +367,12 @@ const Index = () => {
                     <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                       {award.title}
                     </h3>
-                    {award.description && (
+                    {"description" in award && (
                       <p className="text-sm text-muted-foreground mb-2">
                         {award.description}
                       </p>
                     )}
-                    {award.guests && (
+                    {"guests" in award && (
                       <p className="text-xs text-muted-foreground italic">
                         {award.guests}
                       </p>
