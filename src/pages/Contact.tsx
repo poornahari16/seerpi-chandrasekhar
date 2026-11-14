@@ -107,7 +107,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
                     >
-                      Facebook Profile
+                      ఫేస్‌బుక్ ప్రొఫైల్
                     </a>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
                     >
-                      Instagram Profile
+                      ఇన్‌స్టాగ్రామ్ ప్రొఫైల్
                     </a>
                   </div>
                 </div>

@@ -345,7 +345,7 @@ const Index = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        క్లిక్ చేయండి ప zoom చేయడానికి
+                        క్లిక్ చేయండి జూమ్ చేయడానికి
                       </Badge>
                     </div>
                   </div>
@@ -402,7 +402,7 @@ const Index = () => {
                         variant="secondary"
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        క్లిక్ చేయండి ప zoom చేయడానికి
+                        క్లిక్ చేయండి జూమ్ చేయడానికి
                       </Badge>
                     </div>
                   </div>
@@ -747,7 +747,7 @@ const Index = () => {
           <div className="relative max-w-4xl max-h-full">
             <img
               src={lightboxImage}
-              alt="Enlarged view"
+              alt="చిత్రం పెద్దగా చూపించడం"
               className="w-full h-full object-contain"
             />
             <Button

@@ -27,7 +27,7 @@ export function Footer() {
               className="flex items-center gap-2 hover:text-foreground transition-colors"
             >
               <Facebook className="w-4 h-4" />
-              Facebook
+              ఫేస్‌బుక్
             </a>
             <a
               href="https://www.instagram.com/incognitic_emperor_2"
@@ -36,7 +36,7 @@ export function Footer() {
               className="flex items-center gap-2 hover:text-foreground transition-colors"
             >
               <Instagram className="w-4 h-4" />
-              Instagram
+              ఇన్‌స్టాగ్రామ్
             </a>
           </div>
         </div>

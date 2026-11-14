@@ -22,7 +22,7 @@ export default function AllGallery() {
             <ScrollReveal key={i} delay={i * 30}>
               <button
                 onClick={() => setLightbox(img.url)}
-                className="w-full overflow-hidden rounded-sm group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="relative w-full overflow-hidden rounded-sm group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <img
                   src={img.url}
@@ -55,7 +55,7 @@ export default function AllGallery() {
             </button>
             <img
               src={lightbox}
-              alt="Enlarged view"
+              alt="చిత్రం పెద్దగా చూపించడం"
               className="max-w-full max-h-[90vh] object-contain rounded-sm"
               onClick={(e) => e.stopPropagation()}
             />

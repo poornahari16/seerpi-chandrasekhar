@@ -7,6 +7,8 @@ const links = [
   { to: "/about", label: "పరిచయం" },
   { to: "/books", label: "పుస్తకాలు" },
   { to: "/gallery", label: "గ్యాలరీ" },
+  { to: "/gallery/all", label: "అన్ని చిత్రాలు" },
+  { to: "/contact", label: "సంప్రదించండి" },
 ];
 
 export function Navigation() {
